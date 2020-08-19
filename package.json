@@ -1,0 +1,29 @@
+{
+  "name": "pascu",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "react-hot-loader": "4.12.19"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
