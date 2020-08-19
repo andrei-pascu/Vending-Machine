@@ -7,9 +7,16 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "react-hot-loader": "4.12.19"
+    "react-hot-loader": "4.12.19",
+    
+    "@babel/core": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-react": "7.8.3",
+    "babel-loader": "8.1.0"
   },
   "dependencies": {
+    "heroku": "7.39.1",
+
     "@reduxjs/toolkit": "^1.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -17,9 +24,19 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "browserslist": {
+    "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+    ],
+
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
