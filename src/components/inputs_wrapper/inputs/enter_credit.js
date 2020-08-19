@@ -13,7 +13,7 @@ export default function EnterCredit() {
     const count = useSelector(selectCount);
     const dispatch = useDispatch();
     const local_error_code = useSelector(selectError);
-  
+
     return (
         <div className="credit_container">
             <div className="machine_cash_container">
@@ -39,5 +39,5 @@ export default function EnterCredit() {
             </div>
         </div>
     );
-  }
+}
 

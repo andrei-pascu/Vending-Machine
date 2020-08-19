@@ -8,6 +8,16 @@ html {
     justify-content: center;
 }
 
+
+
+
+
+
+
+
+/* Products
+        show */
+
 .products_wrapper {
     width: 33rem;
     margin-top: 4rem;
@@ -19,8 +29,6 @@ html {
     flex-direction: row;
     width: 38rem;
     min-height: 47rem;
-    /* ;
-    max-width: 33rem; */
 
 }
 
@@ -33,7 +41,6 @@ html {
     width: 10rem;
     height: 10rem;
     background-color: #172c3159;
-    /* filter: grayscale(0.5); */
     display: flex;
     border-radius: 50%;
     align-items: center;
@@ -47,13 +54,11 @@ html {
 
 .spinner-left {
     background-color: rgba(127, 255, 212, 0.308);
-    /* transform: translateX(-3rem); */
     animation: move_spinner-left 2s infinite;
 }
 
 .spinner-right {
     background-color: rgba(83, 64, 255, 0.78);
-    /* transform: translateX(3rem); */
     animation: move_spinner-right 2s infinite;
 }
 
@@ -71,6 +76,15 @@ html {
 }
 
 
+
+
+
+
+
+
+
+/* Products
+        load */
 
 .product_row_item {
     margin: 1rem 1rem;
@@ -136,6 +150,9 @@ html {
 
 
 
+
+/* Inputs
+         EnterCode */
 
 
 .inputs_wrapper {
@@ -229,6 +246,26 @@ html {
     align-items: center;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inputs
+         EnterCredit */
+
+
 
 .credit_container {
     width: 100%;
@@ -350,6 +387,13 @@ html {
 
 
 
+
+
+/* Errors
+         Flash */
+
+
+
 @keyframes red_alert {
     0%   { background-color: red }
     100% { background-color: #efeff0cc }
@@ -377,5 +421,3 @@ html {
 .red_fade_2_2 {
     animation: red_alert_2_2 1s backwards;
 }
-
-

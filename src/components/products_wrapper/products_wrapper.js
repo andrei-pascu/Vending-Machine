@@ -57,7 +57,7 @@ const mockData = [
 
 export default function ProductsWrapper() {
  
-    const local_selectProducts = useSelector(select_storedProducts); //iei statu
+    const local_selectProducts = useSelector(select_storedProducts);
     const dispatch = useDispatch();
     const [product_request, setProduct] = useState( () => setTheState());
 
@@ -66,7 +66,7 @@ export default function ProductsWrapper() {
 
 function setTheState() {
     setTimeout(() => {
-        dispatch( storeProducts(mockData)) //din request faci dispatch asta practic
+        dispatch( storeProducts(mockData)) 
     }, 4700)
 
     return local_selectProducts
@@ -74,6 +74,24 @@ function setTheState() {
 }
 
 
+    return (
+        <div className="products_wrapper">
+            <RenderingMachineSlots products={local_selectProducts}></RenderingMachineSlots>
+
+        </div>
+    )
+}
+
+
+
+
+
+
+
+
+
+
+// setTheState
 
 // This would be an external API call
 // fetchProducts() {
@@ -97,10 +115,3 @@ function setTheState() {
 // .
 // .
 // but here we are using mocks
-    return (
-        <div className="products_wrapper">
-            <RenderingMachineSlots products={local_selectProducts}></RenderingMachineSlots>
-
-        </div>
-    )
-}
